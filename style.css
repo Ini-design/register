@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+label{
+  position: fixed;
+  top: 25px;
+  left: 38px;
+}
+.nav{
+    margin-right: 50%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background: fff;
+}
+.span{
+    position: fixed;
+    right: 180px;
+    top: 22px;  
+}
+.span1{
+    position: fixed;
+    right: 120px;
+    top: 22px;  
+}
+.span2{
+    position: fixed;
+    right: 50px;
+    top: 22px;  
+}
+.container{
+    position: absolute;
+    top: 28%;
+    margin: 10px;
+    height: 60%;
+    width: 320px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid cyan;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 0.5px cyan;
+    animation: borderRotate 3s linear infinite;
+}
+@keyframes borderRotate{
+    0%{
+        border-color: cyan;
+        transform: rotate(0deg);
+    }
+    25%{
+       border-color: blue; 
+    }
+    50%{
+        border-color: green;
+        
+    }
+    75%{
+        border-color: red;
+    }
+    100%{
+        border-color: cyan;
+    }
+}
+.cancel{
+    margin-left: 296px;
+}
+.button-small{
+    background: #000;
+    color: #fff;
+    border: none;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 20px;
+    border-radius: 10px;
+}
+.button-small:hover{
+    opacity: 0.9;
+}
+.button-small:active{
+    opacity: 0.1;
+}
+#input{
+ margin: 3px;
+ display: block; 
+ padding: 6px;
+ margin-left: 18px; 
+ border: 1px solid #ddd;
+ border-radius: 15px;
+ height: 30px; 
+ justify-content: center;
+ align-items: center;
+ width: 83%;
+}
+h2{
+    margin-top: 10px;
+   margin-left: 120px; 
+}
+p{
+    display: inline-block;
+    margin-left: 6px;
+}
+#check{
+    float: left;
+    margin-left: 20px;
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    margin-top: 3px;
+}
+span{
+    margin-left: 60px;
+}
+#forgot{
+    float: right;
+    margin-top: -20px;
+}
+a{
+    color: black;  
+}
+.space{
+    margin-left: 40px;
+}
+.btn{
+    display: block;
+    padding: 5px;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    height: 30px;
+    justify-content: center; 
+    width: 83%;
+    margin: 20px;
+    cursor: pointer;
+    transition: background-color 1s; 
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.btn:active{
+    opacity: 0.1;
+}
+.foot{
+    display: fixed;
+    margin-top: 600px;
+}
